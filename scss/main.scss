@@ -1,2 +1,13 @@
-@import './config';
+@import './config', './mixins';
 
+body {
+    @include flexbox(100vh);
+
+    main {
+        @include flexbox(93%);
+    }
+
+    footer {
+        @include flexbox(7%);
+    }
+}
