@@ -2,9 +2,18 @@
 
 body {
     @include flexbox(100vh);
+    font-family: 'Kumbh Sans', sans-serif;
 
     main {
         @include flexbox(93%);
+
+        .content {
+            @include flexbox(auto);
+        }
+
+        .values {
+            @include flexbox(15%, row);
+        }
     }
 
     footer {

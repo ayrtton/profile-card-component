@@ -1,7 +1,7 @@
-@mixin flexbox($height) {
+@mixin flexbox($height, $flex-direction: column) {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: $flex-direction;
     height: $height;
 }
