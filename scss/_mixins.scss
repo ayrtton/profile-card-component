@@ -4,4 +4,19 @@
     justify-content: center;
     flex-direction: $flex-direction;
     height: $height;
+    width: 100%;
+}
+
+@mixin font_sizes($size_01, $size_02, $size_03) {
+    h2, .profile__info span {
+        font-size: $size_01;
+    }
+
+    .profile__location, footer {
+        font-size: $size_02;
+    }
+
+    .values div {
+        font-size: $size_03;
+    }
 }

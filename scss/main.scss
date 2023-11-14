@@ -1,4 +1,4 @@
-@import './config', './mixins';
+@import './config', './mixins', './media-queries';
 
 body {
     @include flexbox(100vh);
@@ -7,12 +7,36 @@ body {
     main {
         @include flexbox(93%);
 
-        .content {
-            @include flexbox(auto);
+        .card {
+            box-shadow: 0.2vw 0.3vw 3vw -0.9vw rgba(0, 0, 0, 0.3);
+            border-radius: 1vw;
+            width: 25vw;
+            height: 55vh;
+        }
+
+        .pattern {
+            height: 35%;
+        }
+
+        .profile {
+            @include flexbox(42%);
+
+            &__info {
+                @include flexbox(auto, row);
+
+                h2 {
+                    margin-right: 0.5vw;
+                }
+            }
         }
 
         .values {
-            @include flexbox(15%, row);
+            @include flexbox(23%, row);
+
+            div {
+                width: 33%;
+                text-align: center;
+            }
         }
     }
 
