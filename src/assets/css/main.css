@@ -130,6 +130,12 @@ body main .profile__info {
 body main .profile__info h2 {
   margin-right: 0.5vw;
 }
+body main .profile__info--age {
+  color: hsl(227, 10%, 46%);
+}
+body main .profile__location {
+  color: hsl(227, 10%, 46%);
+}
 body main .values {
   display: flex;
   align-items: center;
@@ -137,11 +143,23 @@ body main .values {
   flex-direction: row;
   height: 22%;
   width: 100%;
+  justify-content: space-evenly;
   border-top: 0.1vw solid hsl(185, 75%, 50%);
 }
 body main .values div {
-  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  width: auto;
+  gap: 0.5vh;
   text-align: center;
+}
+body main .values div span {
+  color: hsl(227, 10%, 46%);
+  letter-spacing: 0.1vw;
 }
 body footer {
   display: flex;

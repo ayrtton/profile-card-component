@@ -54,16 +54,32 @@ body {
                 h2 {
                     margin-right: 0.5vw;
                 }
+
+                &--age {
+                    color: $dark_grayish_blue;
+                }
+            }
+
+            &__location {
+                color: $dark_grayish_blue;
             }
         }
 
         .values {            
             @include flexbox(22%, row);
+            justify-content: space-evenly;
             border-top: .1vw solid $light_cyan;
 
             div {
-                width: 33%;
+                @include flexbox(auto);
+                width: auto;
+                gap: .5vh;
                 text-align: center;
+
+                span {
+                    color: $dark_grayish_blue;
+                    letter-spacing: .1vw;
+                }
             }
         }
     }
