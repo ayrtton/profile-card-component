@@ -3,9 +3,36 @@
 body {
     @include flexbox(100vh);
     font-family: 'Kumbh Sans', sans-serif;
+    background-color: $dark_cyan;
+    overflow: hidden; 
 
     main {
-        @include flexbox(93%);
+        @include flexbox(93%); 
+
+        .background__top {
+            position: absolute;
+            width: 55%;
+            aspect-ratio: 1 / 1;
+            left: 0;
+            top: 0;
+            transform: translate(-15%, -50%);
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .background__bottom {
+            position: absolute;
+            width: 55%;
+            aspect-ratio: 1 / 1;
+            right: 0;
+            transform: translate(15%, 50%);overflow: hidden; 
+
+            img {
+                height: 100%;
+            }
+        }
 
         .card {
             position: relative;
@@ -14,6 +41,7 @@ body {
             width: 25vw;
             height: 55vh;
             overflow: hidden;
+            background-color: $white;
         }
 
         .image {

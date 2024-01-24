@@ -68,6 +68,8 @@ body {
   height: 100vh;
   width: 100%;
   font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
 }
 body main {
   display: flex;
@@ -77,6 +79,28 @@ body main {
   height: 93%;
   width: 100%;
 }
+body main .background__top {
+  position: absolute;
+  width: 55%;
+  aspect-ratio: 1/1;
+  left: 0;
+  top: 0;
+  transform: translate(-15%, -50%);
+}
+body main .background__top img {
+  height: 100%;
+}
+body main .background__bottom {
+  position: absolute;
+  width: 55%;
+  aspect-ratio: 1/1;
+  right: 0;
+  transform: translate(15%, 50%);
+  overflow: hidden;
+}
+body main .background__bottom img {
+  height: 100%;
+}
 body main .card {
   position: relative;
   box-shadow: 0.2vw 0.3vw 3vw -0.9vw rgba(0, 0, 0, 0.3);
@@ -84,6 +108,7 @@ body main .card {
   width: 25vw;
   height: 55vh;
   overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
 }
 body main .image {
   position: absolute;
