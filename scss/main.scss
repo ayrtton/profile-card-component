@@ -24,6 +24,7 @@ body {
 
         .background__bottom {
             position: absolute;
+            z-index: -1;
             width: 55%;
             aspect-ratio: 1 / 1;
             right: 0;
@@ -113,6 +114,18 @@ body {
     }
 
     footer {
-        @include flexbox(7%);
+        @include flexbox(8%);
+        color: $white;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: $white;
+            transition: .5s;
+
+            &:hover {
+                color: $very_dark_desaturated_blue;
+            }
+        }
     }
 }

@@ -92,6 +92,7 @@ body main .background__top img {
 }
 body main .background__bottom {
   position: absolute;
+  z-index: -1;
   width: 55%;
   aspect-ratio: 1/1;
   right: 0;
@@ -191,6 +192,16 @@ body footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 7%;
+  height: 8%;
   width: 100%;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+body footer a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  transition: 0.5s;
+}
+body footer a:hover {
+  color: hsl(229, 23%, 23%);
 }/*# sourceMappingURL=main.css.map */
