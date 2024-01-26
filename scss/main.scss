@@ -79,7 +79,7 @@ body {
 
             &__info {
                 @include flexbox(auto, row);
-
+                
                 h2 {
                     margin-right: 0.5vw;
                 }
